@@ -286,7 +286,7 @@ function App() {
             <p>
               I'm actively looking for remote software engineering roles,
               with a focus on XR, simulation, defense tech, and AI-adjacent
-              development. Relocating to Dallas–Fort Worth, Orlando, and potentially other locations.
+              development. Relocating to Dallas–Fort Worth, Orlando, or potentially other locations.
             </p>
             <p>
               Whether you have a role in mind or just want to connect —
