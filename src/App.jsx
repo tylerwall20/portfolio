@@ -3,7 +3,7 @@ function App() {
     <>
       <nav>
         <a href="#" className="nav-logo">
-          tw.dev<span className="cursor"></span>
+          tylerwallace.dev<span className="cursor"></span>
         </a>
         <ul className="nav-links">
           <li><a href="#about">About</a></li>
@@ -79,11 +79,10 @@ function App() {
             </p>
             <p>
               I'm currently pursuing a <strong>Bachelor's in Artificial Intelligence</strong>,
-              and actively building toward the convergence of XR and AI — spatial computing,
-              intelligent NPCs, and AI-driven simulation systems.
+              and actively building toward the convergence of XR and AI.
             </p>
             <p>
-              Relocating to <strong>Dallas–Fort Worth</strong>. Open to remote or hybrid roles.
+              Relocating to <strong>Dallas–Fort Worth</strong> or <strong>Orlando</strong>. Open to remote, hybrid, and in-person DFW/Orlando positions. Potentially open to other locations for the right role.
             </p>
           </div>
           <div className="about-stack">
@@ -178,7 +177,7 @@ function App() {
             </div>
           </div>
 
-          <div className="project-card">
+          {/* <div className="project-card">
             <div className="project-type">AI / Experimental</div>
             <h3>[ Your Next Project ]</h3>
             <p>
@@ -198,7 +197,7 @@ function App() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </section>
@@ -287,7 +286,7 @@ function App() {
             <p>
               I'm actively looking for remote software engineering roles,
               with a focus on XR, simulation, defense tech, and AI-adjacent
-              development. Relocating to Dallas–Fort Worth.
+              development. Relocating to Dallas–Fort Worth, Orlando, and potentially other locations.
             </p>
             <p>
               Whether you have a role in mind or just want to connect —
