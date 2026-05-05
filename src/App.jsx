@@ -136,7 +136,7 @@ function App() {
                 {['Unity', 'C#', 'VR'].map(t => <span className="project-tag" key={t}>{t}</span>)}
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">Case Study →</a>
+                <a href="#" className="project-link">Case Study (Coming Soon)</a>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ function App() {
                 {['Unity', 'SDK', 'NPM'].map(t => <span className="project-tag" key={t}>{t}</span>)}
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">Case Study →</a>
+                <a href="#" className="project-link">Case Study (Coming Soon)</a>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ function App() {
                 {['Unity', 'Multiplayer', 'XR'].map(t => <span className="project-tag" key={t}>{t}</span>)}
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">Case Study →</a>
+                <a href="#" className="project-link">Case Study (Coming Soon)</a>
               </div>
             </div>
           </div>
