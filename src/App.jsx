@@ -82,7 +82,7 @@ function App() {
               and actively building toward the convergence of XR and AI.
             </p>
             <p>
-              Relocating to <strong>Dallas–Fort Worth</strong> or <strong>Orlando</strong>. Open to remote, hybrid, and in-person DFW/Orlando positions. Potentially open to other locations for the right role.
+              Relocating to <strong>San Antonio</strong>, <strong>Dallas–Fort Worth</strong>, or <strong>Orlando</strong>. Open to remote, hybrid, and in-person positions. Potentially open to other locations for the right role.
             </p>
           </div>
           <div className="about-stack">
@@ -286,7 +286,7 @@ function App() {
             <p>
               I'm actively looking for remote software engineering roles,
               with a focus on XR, simulation, defense tech, and AI-adjacent
-              development. Relocating to Dallas–Fort Worth, Orlando, or potentially other locations.
+              development. Relocating to San Antonio, Dallas–Fort Worth, Orlando, or potentially other locations.
             </p>
             <p>
               Whether you have a role in mind or just want to connect —
@@ -329,7 +329,7 @@ function App() {
 
       <footer>
         <p>© 2026 Tyler Wallace — Built with React & intention.</p>
-        <p>Dallas–Fort Worth, TX (Relocation in Progress)</p>
+        {/* <p>Dallas–Fort Worth, TX (Relocation in Progress)</p> */}
       </footer>
     </>
   )
