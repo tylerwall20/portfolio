@@ -11,6 +11,7 @@ const media = [
   { type: 'image', src: '/MOTARCaseStudy/MOTARHub.png', caption: 'MOTAR 3D Asset Hub' },
   { type: 'image', src: '/MOTARCaseStudy/3DModelHolodeck.jpg', caption: 'Asset Streaming of 3D Model and Video' },
   { type: 'image', src: '/MOTARCaseStudy/MultiplayerAssetStreaming.png', caption: 'Multiplayer Asset Streaming' },
+  { type: 'embed', src: 'https://player.vimeo.com/video/1047575031?h=390a5c1dd2', caption: 'IITSEC 2024 Suspicious Package Defusal' },
 ]
 
 export default function MediaCarousel() {
@@ -348,6 +349,23 @@ export default function MediaCarousel() {
             />
           )}
 
+          {item.type === 'embed' && (
+            <iframe
+              src={item.src}
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              style={{ position: 'absolute', inset: 0 }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          )}
+
+          {item.type !== 'embed' && (
+            <div className="carousel-caption">{item.caption}</div>
+          )}
+
           {item.type === 'placeholder' && (
             <div className="carousel-placeholder">
               <div className="carousel-placeholder-icon">⬚</div>
@@ -359,11 +377,23 @@ export default function MediaCarousel() {
           {item.type === 'image' && (
             <div className="carousel-expand">Expand</div>
           )}
-          <div className="carousel-caption">{item.caption}</div>
 
           <button className="carousel-arrow left" onClick={(e) => { e.stopPropagation(); prev(); }}>‹</button>
           <button className="carousel-arrow right" onClick={(e) => { e.stopPropagation(); next(); }}>›</button>
         </div>
+
+        {item.type === 'embed' && (
+          <div style={{
+            fontFamily: 'var(--mono)',
+            fontSize: '0.7rem',
+            color: 'var(--bold)',
+            letterSpacing: '0.05em',
+            marginTop: '0.5rem',
+            paddingLeft: '0.25rem'
+          }}>
+            {item.caption}
+          </div>
+        )}
 
         {/* THUMBNAILS */}
         <div className="carousel-thumbs">
@@ -378,8 +408,13 @@ export default function MediaCarousel() {
               {m.type === 'placeholder' && (
                 <div className="carousel-thumb-placeholder">{m.label}</div>
               )}
+              {m.type === 'embed' && (
+                <div className="carousel-thumb-placeholder">▶ Video</div>
+              )}
             </div>
           ))}
+
+          
         </div>
       </div>
 
