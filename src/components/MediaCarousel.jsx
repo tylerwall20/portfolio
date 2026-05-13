@@ -328,6 +328,13 @@ export default function MediaCarousel() {
           border-color: var(--accent);
           color: var(--accent);
         }
+
+        @media (max-width: 768px) {
+          .lightbox-arrow.left { left: 0.5rem; }
+          .lightbox-arrow.right { right: 0.5rem; }
+          .lightbox-x { top: 0.5rem; right: 0.5rem; }
+          .lightbox-close { display: none; }
+        }
       `}</style>
 
       <div className="carousel-wrap">
