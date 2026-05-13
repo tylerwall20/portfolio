@@ -1,3 +1,5 @@
+import MediaCarousel from '../components/MediaCarousel'
+
 function MOTARCaseStudy() {
   return (
     <>
@@ -208,10 +210,19 @@ function MOTARCaseStudy() {
             </div>
           </div>
 
-          {/* OUTCOME */}
+          {/* DEMO MEDIA */}
           <div className="cs-section">
             <div className="cs-section-header">
               <span className="cs-section-num">05</span>
+              <h2 className="cs-section-title">Media</h2>
+            </div>
+            <MediaCarousel />
+          </div>
+
+          {/* OUTCOME */}
+          <div className="cs-section">
+            <div className="cs-section-header">
+              <span className="cs-section-num">06</span>
               <h2 className="cs-section-title">Outcome</h2>
             </div>
             <div className="cs-outcome">
