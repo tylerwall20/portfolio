@@ -329,7 +329,7 @@ export default function MediaCarousel() {
           color: var(--accent);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
           .lightbox-arrow.left { left: 0.5rem; }
           .lightbox-arrow.right { right: 0.5rem; }
           .lightbox-x { top: 0.5rem; right: 0.5rem; }
@@ -429,7 +429,6 @@ export default function MediaCarousel() {
       {isLightbox && item.type === 'image' && (
         <div className="lightbox-overlay" onClick={() => setIsLightbox(false)}>
           <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
-            <div className="lightbox-close" onClick={() => setIsLightbox(false)}>ESC to close</div>
             <button className="lightbox-x" onClick={() => setIsLightbox(false)}>✕</button>
             <img src={item.src} alt={item.caption} />
             <div className="lightbox-caption">{item.caption}</div>
